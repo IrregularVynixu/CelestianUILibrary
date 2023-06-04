@@ -326,14 +326,14 @@ function CelestianUILib:CreateWindow(WindowText)
 			ToggleStatus.Position = UDim2.new(0.913999975, 0, 0.5, 0)
 			ToggleStatus.Size = UDim2.new(0, 17, 0, 17)
 			ToggleStatus.Image = "rbxassetid://2790371148"
-			ToggleStatus.ImageColor3 = Color3.fromRGB(255, 20, 24)
+			ToggleStatus.ImageColor3 = Color3.fromRGB(128, 128, 128)
 			ToggleStatus.ScaleType = Enum.ScaleType.Slice
 			ToggleStatus.SliceCenter = Rect.new(32, 32, 224, 224)
 						
 			local function togglefunc()
 				CelestianUILib.flags.toggles[flag] = not CelestianUILib.flags.toggles[flag]
 				if isFunctionToggle then func(CelestianUILib.flags.toggles[flag]) end
-				CelestianUILib.functions:Tween(ToggleStatus, {Time = 0.1, Style = "Linear", Direction = "InOut"}, {ImageColor3 = CelestianUILib.flags.toggles[flag] and Color3.fromRGB(0, 255, 50) or Color3.fromRGB(255, 20, 24)})
+				CelestianUILib.functions:Tween(ToggleStatus, {Time = 0.1, Style = "Linear", Direction = "InOut"}, {ImageColor3 = CelestianUILib.flags.toggles[flag] and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(128, 128, 128)})
 			end
 			
 			Toggle.MouseButton1Click:Connect(togglefunc)
