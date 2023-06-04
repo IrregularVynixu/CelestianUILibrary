@@ -123,7 +123,7 @@ function CelestianUILib:CreateWindow(WindowText)
 	TabBtnHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	TabBtnHolder.BackgroundTransparency = 1.000
 	TabBtnHolder.BorderSizePixel = 0
-	TabBtnHolder.Position = UDim2.new(0, 0, 0.866666675, 0)
+	TabBtnHolder.Position = UDim2.new(0, 0, 0.095999995, 0)
 	TabBtnHolder.Size = UDim2.new(0, 117, 0, 201)
 	TabBtnHolder.CanvasSize = UDim2.new(0, 0, 0, 0)
 	TabBtnHolder.ScrollBarThickness = 3
